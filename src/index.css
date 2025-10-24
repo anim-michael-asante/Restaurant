@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.premium-marquee {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+@keyframes premium-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-premium-marquee {
+  animation: premium-marquee 25s linear infinite;
+}
